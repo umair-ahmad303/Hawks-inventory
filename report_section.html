@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Reports - Inventory Management System</title>
+    <link rel="stylesheet" href="stock_report_page.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Inventory Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="report_section.html">Reports</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="reports">
+            <h2>Generate Reports</h2>
+            <p>Choose the type of report you want to generate and specify the date range to get detailed insights into your inventory performance.</p>
+
+            <section class="report-types">
+                <h3>Report Types</h3>
+                <p>We offer various report types to help you monitor and analyze inventory data:</p>
+                <ul>
+                    <li><strong>Inventory Summary</strong>: Get an overview of the entire inventory with product details and current stock levels.</li>
+                    <li><strong>Low Stock Report</strong>: Identify products that are running low on stock to manage restocking.</li>
+                    <li><strong>Sales Report</strong>: Track product sales, including revenue, sold quantities, and trends during a specified period.</li>
+                </ul>
+            </section>
+
+            <form action="process_report.html" method="post">
+                <fieldset>
+                    <legend>Select Report Parameters:</legend>
+
+                    <!-- Report Type Selection -->
+                    <label for="report-type">Report Type:</label>
+                    <select id="report-type" name="report-type" required>
+                        <option value="inventory-summary">Inventory Summary</option>
+                        <option value="low-stock">Low Stock Report</option>
+                        <option value="sales-report">Sales Report</option>
+                    </select>
+
+                    <!-- Date Range Selection -->
+                    <div class="date-range">
+                        <label for="start-date">Start Date:</label>
+                        <input type="date" id="start-date" name="start-date" required>
+
+                        <label for="end-date">End Date:</label>
+                        <input type="date" id="end-date" name="end-date" required>
+                    </div>
+
+                    <!-- Optional Filters -->
+                    <div class="optional-filters">
+                        <label for="category-filter">Category (optional):</label>
+                        <select id="category-filter" name="category-filter">
+                            <option value="">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="home-essentials">Home Essentials</option>
+                            <option value="office-supplies">Office Supplies</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn">Generate Report</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="report-details">
+            <h3>Why Generate Reports?</h3>
+            <p>Generating reports provides actionable insights that help you optimize your inventory management. Here’s why each report is important:</p>
+            <ul>
+                <li><strong>Inventory Summary:</strong> Helps track overall inventory health, making it easier to identify excess or missing stock.</li>
+                <li><strong>Low Stock Report:</strong> Essential for preventing stockouts, ensuring that you never run out of essential products.</li>
+                <li><strong>Sales Report:</strong> Vital for understanding product performance, guiding marketing and sales strategies.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inventory Management System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+/* General Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+/* Header */
+header {
+    width: 100%;
+    position: relative;
+    background-color: #2846a7;
+    color: #fff5f5;
+    padding: 0.7rem;
+}
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+    nav a:hover {
+        color: #d4edda;
+    }
+
+.products-intro h2, p{
+    margin-top: 10px;
+}
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* More compact for inventory look */
+    gap: 20px;
+    padding: 2rem;
+    justify-items: center;
+    align-items: start; /* Aligns products neatly */
+}
+
+/* Product Card */
+.product {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Makes product take full width of grid cell */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .product img {
+        width: 100%;
+        max-height: 200px; /* Restrict height for consistent layout */
+        object-fit: cover; /* Maintain aspect ratio */
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+
+        .product img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+    .product h3 {
+        margin-bottom: 0.5rem;
+        color: #28a745;
+        font-size: 1.1rem;
+    }
+
+    .product p {
+        color: #300390;
+        font-size: 0.95rem;
+    }
+
+/* Categories Section */
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 20px;
+}
+
+.category {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 250px;
+    flex: 1;
+}
+
+    .category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+.category-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.category h3 {
+    color: #1d0364;
+    font-size: 1.2rem;
+}
+
+/* Product Table */
+.product-table {
+    width: 95%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .product-table th, .product-table td {
+        padding: 1rem;
+        border: 1px solid #ddd;
+    }
+
+    .product-table th {
+        background-color: #2846a7;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .product-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .product-table tr:hover {
+        background-color: #e9f7ef;
+        cursor: pointer;
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}

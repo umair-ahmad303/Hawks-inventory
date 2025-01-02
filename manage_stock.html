@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Stock - Inventory Management System</title>
+    <link rel="stylesheet" href="stock_report_page.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Inventory Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="report_section.html">Reports</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="manage-stock">
+            <h2>Manage Stock</h2>
+            <p>Use this page to add, update, or remove products from your inventory.</p>
+
+            <!-- Add New Product Form -->
+            <section class="add-product">
+                <h3>Add New Product</h3>
+                <form action="add_product.php" method="POST">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" name="product_name" required>
+
+                    <label for="product-id">Product ID:</label>
+                    <input type="text" id="product-id" name="product_id" required>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" step="0.01" required>
+
+                    <button type="submit" class="btn">Add Product</button>
+                </form>
+            </section>
+
+            <!-- Update Stock Quantity Form -->
+            <section class="update-stock">
+                <h3>Update Stock Quantity</h3>
+                <form action="update_stock.php" method="POST">
+                    <label for="update-product-id">Product ID:</label>
+                    <input type="text" id="update-product-id" name="product_id" required>
+
+                    <label for="new-quantity">New Quantity:</label>
+                    <input type="number" id="new-quantity" name="new_quantity" min="1" required>
+
+                    <button type="submit" class="btn">Update Quantity</button>
+                </form>
+            </section>
+
+            <!-- Remove Product Form -->
+            <section class="remove-product">
+                <h3>Remove Product</h3>
+                <form action="remove_product.php" method="POST">
+                    <label for="remove-product-id">Product ID:</label>
+                    <input type="text" id="remove-product-id" name="product_id" required>
+
+                    <button type="submit" class="btn">Remove Product</button>
+                </form>
+            </section>
+
+            <!-- Display Products Table (Example) -->
+            <section class="product-list">
+                <h3>Current Inventory</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product ID</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example data -->
+                        <tr>
+                            <td>   Example Product</td>
+                            <td>5453</td>
+                            <td>100</td>
+                            <td>150000 /Rs</td>
+                        </tr>
+                        <tr>
+                            <td>Sample Item</td>
+                            <td>67890</td>
+                            <td>50</td>
+                            <td>25000 /Rs</td>
+                        </tr>
+                        <!-- Additional product rows can go here -->
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inventory Management System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

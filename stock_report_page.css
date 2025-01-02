@@ -1,0 +1,240 @@
+/* Stock and Report Page Specific CSS */
+
+/* General Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+/* Header */
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #2846a7;
+    color: #fff5f5;
+    padding: 0.7rem;
+}
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+    nav a:hover {
+        color: #d4edda;
+    }
+
+/* Reports Page */
+.reports {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .reports h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #2846a7;
+    }
+
+    .reports p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        color: #555;
+    }
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .form-group select,
+    .form-group input {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+        .form-group input[type="date"] {
+            max-width: 250px;
+        }
+
+.optional-filters {
+    margin-top: 1rem;
+}
+
+    .optional-filters label {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+.btn {
+    background-color: #2846a7;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+    .btn:hover {
+        background-color: #421cea;
+    }
+
+.report-description {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: left;
+    padding: 1rem;
+}
+
+    .report-description h3 {
+        font-size: 1.8rem;
+        color: #28a745;
+        margin-bottom: 1rem;
+    }
+
+    .report-description ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .report-description li {
+        margin-bottom: 1rem;
+    }
+
+/* Stock Management Page */
+.stock-management {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .stock-management h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #2846a7;
+    }
+
+.product-inventory {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+    .product-inventory table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 2rem;
+    }
+
+    .product-inventory th,
+    .product-inventory td {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .product-inventory th {
+        background-color: #2846a7;
+        color: #fff;
+    }
+
+    .product-inventory td {
+        background-color: #f8f9fa;
+    }
+
+    .product-inventory tr:hover {
+        background-color: #f1f1f1;
+    }
+
+.category {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .category h3 {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        color: #2846a7;
+    }
+
+    .category img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}

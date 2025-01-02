@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Inventory Management System</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Inventory Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="report_section.html">Reports</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-intro">
+            <h2>Our Products</h2>
+            <p>Explore a variety of items available in our inventory. From electronics to everyday essentials, we have it all to meet your needs.</p>
+            <div class="product-categories">
+                <div class="category">
+                    <img src="images/Iphone.jpeg" alt="Iphone" class="category-image">
+                    <h3>Iphone</h3>
+                </div>
+                <div class="category">
+                    <img src="images/Ipad.jpeg" alt="Ipad" class="category-image">
+                    <h3>Ipad</h3>
+                </div>
+                <div class="category">
+                    <img src="images/Acessories.jpeg" alt="Acessories" class="category-image">
+                    <h3>Acessories</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Inventory List -->
+        <section class="product-inventory">
+            <h2>Product Inventory</h2>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mobile Phones </td>
+                        <td>IPhones</td>
+                        <td>215000 /Rs</td>
+                        <td>25</td>
+                        <td>
+                            <a href="manage_stock.html" class="btn">Manage</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tablets</td>
+                        <td>Ipad</td>
+                        <td>150000 /Rs</td>
+                        <td>15</td>
+                        <td>
+                            <a href="manage_stock.html" class="btn">Manage</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Headphones,charges,etc</td>
+                        <td>Acessories</td>
+                        <td>2500 /Rs</td>
+                        <td>300</td>
+                        <td>
+                            <a href="manage_stock.html" class="btn">Manage</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add New Product Section -->
+        <section class="add-product">
+            <h3>Add a New Product</h3>
+            <p>If you'd like to add a new product to the inventory, click the button below:</p>
+            <a href="manage_stock.html" class="btn">Add New Product</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inventory Management System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
